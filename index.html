@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Study </title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="img/jpg" href="img/LogoMakerCa-1646725397887.png"/>
+  <!-- <link rel="shortcut icon" href="img/logo.jpg" type="img/jpg"> -->
+</head>
+<body onload="loadcomplete()">
+       <div class="loading" style="position:fixed;height: 100vh; width: 100vw;">
+          <img src="img/loading.gif" alt="" width="100% height:100vh;">
+
+       </div>
+      
+    <nav >
+        <h1 style="color:rgb(0, 0, 0); position: absolute; top: 3rem; left: 4rem;" >Official India</h1>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="lable">
+            <i class="fa-solid fa-bars fa-3x"></i>
+        </label>
+        <ul>
+            <label for="checkbox" class="close">
+                <b class="close"><i class="zmdi zmdi-close"></i></b>
+            </label>
+            <br>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="#">About us </a></li>
+                  <li><a href="fees.html">Fees </a></li>
+                    <li><a href="#" id="contact">Contact us </a></li>
+           
+ </ul>
+
+    </nav>
+   
+
+        <div class="containercontactus">
+            <b style="font-size: 3rem; color: rgb(255,115,0);">Contact Now </b>
+    
+          <b class="closecontactus"><i class="zmdi zmdi-close"></i></b>
+           <br>
+           <br>
+           <form action="" onsubmit="contactus(); reset(); false">
+                <input type="text" id="NAME" placeholder="Name" class="inputcontactus">
+                <br><br><br>
+                <input type="number" id="PHONENUMBER" placeholder="Phone Number " class="inputcontactus">
+                <br><br><br>
+                <input type="email" id="EMAIL" placeholder="Email" class="inputcontactus">
+                <br><br><br>
+                <input type="text" id="Message" placeholder="Message*" class="inputcontactus">
+                <br><br><br>
+                <input type="checkbox"  id="whatsapp" required > Contact me on Whatsapp
+                <br><br><br>
+                <button id="Submit">Submit</button>
+            </form>
+        
+ </div>
+ 
+ <div class="democlassdiv">
+    <b style="font-size: 3rem; color: rgb(255,115,0);">Book A  Free Demo Class</b>
+
+  <b class="closedemo"><i class="zmdi zmdi-close"></i></b>
+   <br>
+   <br>
+   <form action="" onsubmit="sendEmail();reset(); false">
+        <input type="text" id="name" placeholder="Name" class="inputdemoclass">
+        <br><br><br>
+        <input type="number" id="phone" placeholder="Phone Number " class="inputdemoclass">
+        <br><br><br>
+        <input type="email" id="email" placeholder="Email" class="inputdemoclass">
+        <br><br><br>
+        <select  id="class" class="inputdemoclass">
+            <option value="1st">Class 1</option>
+            <option value="2nd"> Class 2</option>
+            <option value="3rd"> Class 3</option>
+            <option value="4th"> Class 4</option>
+            <option value="5th">Class 5</option>
+            <option value="6th"> Class 6</option>
+            <option value="7th"> Class 7</option>
+            <option value="8th">Class 8</option>
+        </select>
+        <br><br><br>
+        <Select id="selectoption" class="inputdemoclass">
+            <option value="Sunday 11 to 12">Sunday 11 to 12 </option>
+            <option value="Sunday 12 to 1">Sunday 12 to 1 </option>
+            <option value="Sunday 1 to 2 ">Sunday 1 to 2 </option>
+            <option value="Sunday 2 to 3 ">Sunday 2 to 3 </option>
+            <option value="Sunday 3 to 4 pm"> Sunday 3 to 4 pm</option>
+            <option value="Sunday 4 to 5 pm"> Sunday 4 to 5 pm</option>
+            <option value="Sunday 6 to 7 pm"> Sunday 6 to 7 pm</option>
+            <option value="Sunday  8 to 9 pm">Sunday  8 to 9 pm</option>
+        </Select>
+        <br><br><br>
+        <input type="checkbox"  id="whatsapp" required > Contact me on Whatsapp
+        <br><br><br>
+        <button id="Submit">Submit</button>
+    </form>
+
+</div>
+    <div class="section">
+        <p class="content">
+          
+           <b style="font-size:3rem; padding-left: 1rem; color: rgb(255,115,0);"> Your Future!</b> 
+           <br>
+           <br>
+           Your future starts here with Official India <br> where you not only memorise <br> concepts but create and
+           understand <br> it effortlessly.
+
+        <br>
+        <br>
+        <button id="democlass">Book A Free Demo Class</button>
+    </p>
+    <img src="img/pngwing.com.png" alt="" class="imgdemo">
+    <br>
+    
+</div>
+
+<div class="democlassdiv2">
+    <b style="font-size: 3rem; color: rgb(255,115,0);">Book Free Coding Demo Class </b>
+    
+    <b class="closecoding"><i class="zmdi zmdi-close"></i></b>
+    <br>
+    <br>
+    <form action=""onsubmit="codingEmail(); reset(); false">
+        <input type="text" id="Name" placeholder="Name" class="inputdemoclass">
+        <br><br><br>
+        <input type="number" id="Phone" placeholder="Phone Number " class="inputdemoclass">
+        <br><br><br>
+        <input type="email" id="Email" placeholder="Email" class="inputdemoclass">
+        <br><br><br>
+        <select  id="programinglang" class="inputdemoclass"> 
+            <option value="java">JAVA</option>
+            <option value="Javascript">JAVASCRIPT</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="WD">WEB DEVELOPMENT</option>
+            <option value="PHP">PHP</option>
+            <option value="WEB DESIGNING">WEB DESIGNING </option>
+            <option value="BACKEND DEVELOPMENT">BACKEND DEVELOPMENT</option>
+        </select>
+        <br><br><br>
+        <Select id="selectoption2" class="inputdemoclass">
+            <option value="Monday 4 to 5 pm"> Monday 4 to 5 pm</option>
+            <option value="Monday 6 to 7 pm"> Monday 6 to 7 pm</option>
+            <option value="Monday 8 to 9 pm">Monday 8 to 9 pm</option>
+            <option value="Monday 9 to 10 pm">Monday 9 to 10 pm</option>
+        </Select>
+        <br><br><br>
+        <input type="checkbox"  id="whatsapp" required > Contact me on Whatsapp
+        <br><br><br>
+        <button id="Submit">Submit</button>
+    </form>
+    
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="codingclass">
+    <p class="say">
+    <b style="font-size: 2rem ; color: rgb(255,115,0);">Coding Classes For <br> Your kids Introduce <br> your Child to the <br> World of Coding</b> 
+    <br>
+    <br>
+    <button id="democlass2">Book A Free Demo Class</button>
+
+</p>
+<center>
+<img src="img/first-fold.webp" alt="" class="codingimg">
+
+</center>
+</div>
+
+<br><br><br>
+
+<center><b style="font-size: 3rem ; color: rgb(255,115,0);">What Expect  From the Demo  Session</b></center> 
+<div class="whatexpect">
+   <div class="analysis">
+    
+        <b style="color: rgb(255,115,0); font-size: 3rem;">  <i class="fa-solid fa-chart-line fa-3x"></i> <br> Analysis</b> 
+        <br><br>
+      <!-- Broad analysis of <br> learning gaps <br>
+      affecting the child's <br> performance and learning. -->
+
+</div>
+<div class="analysis">
+
+     
+   <b style="color: rgb(255,115,0); font-size: 3rem;">  <i class="fa-solid fa-lightbulb fa-3x"></i> <br> Special Quizzes</b> 
+   <br><br>
+<!-- Participate in ingenious <br> Quizzes like the ones <br> in our LIVE  Classes. -->
+
+ </div>
+ <div class="analysis">
+    
+       
+     <b style="color: rgb(255,115,0); font-size: 3rem;"> <i class="fa-solid fa-desktop fa-3x"></i> <br> Online Live Classes</b> 
+     <br><br>
+  <!-- Participate in ingenious <br> Quizzes like the ones <br> in our LIVE  Classes. -->
+
+   </div>
+   </div>
+<!-- ======================================================================> Spacing in a code  -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- ============================================================================> Add footer in website  -->
+<footer style="font-size: 2rem; color: rgb(255,115,0); background-color: white; width: 100%; height: 6rem; "> <a href=""> <center>@Firebuild</a> @OffcialIndia  2022 2023</center> </footer>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
